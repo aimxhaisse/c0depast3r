@@ -10,8 +10,12 @@ body {
 }
 
 div#c0nt3nt {
-    width: 400px;
+    width: 500px;
     margin: auto;
+}
+
+a img {
+    border: 0;
 }
 
 input {

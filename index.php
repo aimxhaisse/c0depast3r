@@ -21,7 +21,11 @@ db_install();
   <body onload="prettyPrint()">
     <div id="c0nt3nt">
       <div id="h34d3r">
-	<h1>c0depast3r</h1>
+	<img src="banner.png" alt="banner" />
+      </div>
+      <div id="m3nu">
+       <a href="?p=add"><img src="new.png" alt="add a new entry" /></a>
+       <a href="?p=list"><img src="latest.png" alt="list recent entries" /></a>
       </div>
       <div id="p4g3">
 	<?php require_once('inc/dispatcher.php') ?>
