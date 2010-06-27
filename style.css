@@ -5,6 +5,28 @@ body {
     color: #555555;
     font: normal 1em/1.4em Helvetica, sans-serif;
     font-size: 1em;
-    text-align: center;
     line-height: 1.4;
+    text-align: center;
+}
+
+div#c0nt3nt {
+    width: 400px;
+    margin: auto;
+}
+
+input {
+    border: 1px solid array;
+    font-size: 20px;
+    margin: 20px;
+    width: 300px;
+}
+
+textarea {
+    width: 300px;
+    font-size: 20px;
+}
+
+h2 {
+    color: #C76114;
+    margin: 0;
 }

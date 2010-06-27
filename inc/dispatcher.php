@@ -5,7 +5,7 @@
 
 function	dispatcher()
 {
-  $page = isset($_GET['p']) && $_GET['p'];
+  $page = isset($_GET['p']) ? $_GET['p'] : '';
 
   switch ($page)
     {
