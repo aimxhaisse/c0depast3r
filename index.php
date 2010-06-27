@@ -15,8 +15,10 @@ db_install();
   <head>
     <title>c0depast3r</title>
     <link rel="stylesheet" type="text/css" charset="utf-8" media="all" href="style.css">
+    <link href="prettify/prettify.css" type="text/css" rel="stylesheet" />
+    <script type="text/javascript" src="prettify/prettify.js"></script>
   </head>
-  <body>
+  <body onload="prettyPrint()">
     <div id="c0nt3nt">
       <div id="h34d3r">
 	<h1>c0depast3r</h1>

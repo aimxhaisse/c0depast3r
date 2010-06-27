@@ -38,3 +38,16 @@ function	db_add_code($author, $code)
 
   return "c0de add3d";
 }
+
+// Get a new code
+function	db_get_code($id)
+{
+  global	$global_db;
+
+  if (!$global_db['handler']) return false;
+
+  $q = sqlite_query($global_db['handler'], 
+		    "SELECT id, author, code, date FROM c0depast3r WHERE id='$id'");
+
+  return sqlite_fetch_array($q);
+}
