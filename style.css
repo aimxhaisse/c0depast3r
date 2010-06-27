@@ -1,0 +1,10 @@
+body {
+    margin: 0 0;
+    padding: 0;
+    background: #ffffff;
+    color: #555555;
+    font: normal 1em/1.4em Helvetica, sans-serif;
+    font-size: 1em;
+    text-align: center;
+    line-height: 1.4;
+}
