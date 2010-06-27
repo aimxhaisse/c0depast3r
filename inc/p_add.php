@@ -18,7 +18,7 @@ $message = add_new_code();
   <form name="code_add" action="" method="POST">
     <input type="text" name="author" value="auth0r" class="clean_on_click" />
     <br />
-    <textarea name="code" rows="20" cols="30" ></textarea>
+    <textarea name="code" rows="20" cols="80" ></textarea>
     <br />
     <input type="submit" value="s3nd" />
   </form>
