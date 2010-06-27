@@ -1,3 +1,16 @@
+<?php
+
+error_reporting(E_ALL);
+
+// Some globals containers
+$global_db = array('handler' => false);
+
+require_once("inc/config.php");
+require_once("inc/db.php");
+
+db_install();
+
+?>
 <html>
   <head>
     <title>c0depast3r</title>
