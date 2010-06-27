@@ -25,6 +25,16 @@ function	db_install()
 
 }
 
+// Returns last inserted id
+function	db_last_id()
+{
+  global	$global_db;
+
+  if (!$global_db['handler']) return 0;
+
+  return sqlite_last_insert_rowid($global_db['handler']);
+}
+
 // Add a new code, returns a string displayed on p_add
 function	db_add_code($author, $code)
 {
@@ -36,7 +46,30 @@ function	db_add_code($author, $code)
 	      "INSERT INTO c0depast3r(id, code, author, date)" .
 	      "VALUES(NULL, '$code', '$author', DATE('NOW'));");
 
-  return "c0de add3d";
+  $id = db_last_id();
+
+  return 'c0de add3d (<a href="?p=view&code='.$id.'">#'.$id.'</a>)';
+}
+
+// Add a new code, returns a string displayed on p_add
+function	db_get_codes()
+{
+  global	$global_db;
+
+  if (!$global_db['handler']) return false;
+
+  $q = sqlite_query($global_db['handler'], 
+		   "SELECT id, author, date FROM c0depast3r
+		      ORDER BY id DESC LIMIT 30");
+
+  $entries = array();
+
+  while ($entry = sqlite_fetch_array($q))
+    {
+      $entries[] = $entry;
+    }
+
+  return $entries;
 }
 
 // Get a new code
