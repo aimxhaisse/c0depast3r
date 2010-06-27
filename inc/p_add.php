@@ -4,8 +4,8 @@ function	add_new_code()
 {
   global	$_POST;
 
-  $author = isset($_POST['author']) ? addslashes($_POST['author']) : "an0n";
-  $code = isset($_POST['code']) ? addslashes($_POST['code']) : false;
+  $author = isset($_POST['author']) ? $_POST['author'] : "an0n";
+  $code = isset($_POST['code']) ? $_POST['code'] : false;
 
   return $code ? db_add_code($author, $code) : "P0st a n3w c0de";
 }

@@ -42,6 +42,9 @@ function	db_add_code($author, $code)
 
   if (!$global_db['handler']) return "pr0bl3m s1re?";
 
+  $author = sqlite_escape_string($author);
+  $code = sqlite_escape_string($code);
+
   sqlite_exec($global_db['handler'], 
 	      "INSERT INTO c0depast3r(id, code, author, date)" .
 	      "VALUES(NULL, '$code', '$author', DATE('NOW'));");
