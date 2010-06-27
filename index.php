@@ -1,6 +1,6 @@
 <?php
 
-error_reporting(E_ALL);
+error_reporting(0);
 
 // Some globals containers
 $global_db = array('handler' => false);
