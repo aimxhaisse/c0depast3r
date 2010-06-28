@@ -1,0 +1,5 @@
+Options +FollowSymlinks
+RewriteEngine On
+RewriteRule ^add(/*)$ index.php?p=add [L]
+RewriteRule ^view/([0-9]+)$ index.php?p=view&code=$1 [L]
+RewriteRule ^latest$ index.php?p=list [L]

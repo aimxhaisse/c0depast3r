@@ -13,7 +13,7 @@ db_install();
 ?>
 <html>
   <head>
-    <base href="/"/>
+    <base href="__"/>
     <title>c0depast3r</title>
     <link rel="stylesheet" type="text/css" charset="utf-8" media="all" href="style.css">
     <link href="prettify/prettify.css" type="text/css" rel="stylesheet" />
@@ -25,8 +25,8 @@ db_install();
 	<img src="banner.png" alt="banner" />
       </div>
       <div id="m3nu">
-       <a href="?p=add"><img src="new.png" alt="add a new entry" /></a>
-       <a href="?p=list"><img src="latest.png" alt="list recent entries" /></a>
+       <a href="add"><img src="new.png" alt="add a new entry" /></a>
+       <a href="latest"><img src="latest.png" alt="list recent entries" /></a>
       </div>
       <div id="p4g3">
 	<?php require_once('inc/dispatcher.php') ?>
