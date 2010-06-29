@@ -17,6 +17,6 @@ $code = view_code();
 
 ?>
 <div id="p_view">
-  <h2>vi3wing c0de #<?php echo $code['id'] ?> fr0m <?php echo $code['author'] ?></h2>
+   <h2>vi3wing c0de #<?php echo $code['id'] ?> fr0m <?php echo htmlentities($code['author']) ?></h2>
   <pre class="prettyprint"><?php echo htmlentities($code['code']) ?></pre>
 </div>
