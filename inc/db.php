@@ -45,11 +45,13 @@ function	db_add_code($author, $code)
   $author = sqlite_escape_string($author);
   $code = sqlite_escape_string($code);
 
-  sqlite_exec($global_db['handler'], 
+  sqlite_exec($global_db['handler'],
 	      "INSERT INTO c0depast3r(id, code, author, date)" .
 	      "VALUES(NULL, '$code', '$author', DATE('NOW'));");
 
   $id = db_last_id();
+
+  irc_notice('pastebin.buffout.org -> c0de add3d [ http://pastebin.buffout.org/view/' . $id . ' ]');
 
   return 'c0de add3d (<a href="view/'.$id.'">#'.$id.'</a>)';
 }
@@ -61,7 +63,7 @@ function	db_get_codes()
 
   if (!$global_db['handler']) return false;
 
-  $q = sqlite_query($global_db['handler'], 
+  $q = sqlite_query($global_db['handler'],
 		   "SELECT id, author, date FROM c0depast3r
 		      ORDER BY id DESC LIMIT 30");
 
@@ -82,7 +84,7 @@ function	db_get_code($id)
 
   if (!$global_db['handler']) return false;
 
-  $q = sqlite_query($global_db['handler'], 
+  $q = sqlite_query($global_db['handler'],
 		    "SELECT id, author, code, date FROM c0depast3r WHERE id='$id'");
 
   return sqlite_fetch_array($q);
