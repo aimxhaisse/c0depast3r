@@ -20,7 +20,7 @@ function irc_notice($message)
 		fwrite($sock, "JOIN " . IRC_CHAN . "\n\r");
 		fwrite($sock, "PRIVMSG ". IRC_CHAN ." :$message\r\n");
 		fflush($sock);
-		sleep(0.5);
+		sleep(1);
 		fclose($sock);
 	}
 }
