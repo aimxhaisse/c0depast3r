@@ -24,8 +24,8 @@ db_install();
 	<img src="/banner.png" alt="banner" />
       </div>
       <div id="m3nu">
-       <a href="add"><img src="/new.png" alt="add a new entry" /></a>
-       <a href="latest"><img src="/latest.png" alt="list recent entries" /></a>
+       <a href="/add"><img src="/new.png" alt="add a new entry" /></a>
+       <a href="/latest"><img src="/latest.png" alt="list recent entries" /></a>
       </div>
       <div id="p4g3">
 	<?php require_once('inc/dispatcher.php') ?>

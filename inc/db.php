@@ -53,7 +53,7 @@ function	db_add_code($author, $code)
 
   irc_notice('pastebin.buffout.org -> c0de add3d [ http://pastebin.buffout.org/view/' . $id . ' ]');
 
-  return 'c0de add3d (<a href="view/'.$id.'">#'.$id.'</a>)';
+  return 'c0de add3d (<a href="/view/'.$id.'">#'.$id.'</a>)';
 }
 
 // Add a new code, returns a string displayed on p_add

@@ -9,7 +9,7 @@ $entries = db_get_codes();
   <br />
   <?php foreach ($entries as $entry) : ?>
   <h3>
-   <a href="view/<?php echo $entry['id'] ?>">#<?php echo $entry['id'] ?></a> - <?php echo htmlentities($entry['author']) ?> (<?php echo $entry['date'] ?>)
+   <a href="/view/<?php echo $entry['id'] ?>">#<?php echo $entry['id'] ?></a> - <?php echo htmlentities($entry['author']) ?> (<?php echo $entry['date'] ?>)
   </h3>
   <?php endforeach ?>
 </div>
