@@ -14,7 +14,7 @@ db_install();
 <html>
   <head>
     <title>c0depast3r</title>
-    <link rel="stylesheet" type="text/css" charset="utf-8" media="all" href="style.css">
+    <link rel="stylesheet" type="text/css" charset="utf-8" media="all" href="/style.css">
     <link href="/prettify/prettify.css" type="text/css" rel="stylesheet" />
     <script type="text/javascript" src="/prettify/prettify.js"></script>
   </head>
