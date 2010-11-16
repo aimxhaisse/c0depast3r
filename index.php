@@ -1,6 +1,6 @@
 <?php
 
-error_reporting(0);
+error_reporting(E_ALL);
 
 // Some globals containers
 $global_db = array('handler' => false);
@@ -21,15 +21,25 @@ db_install();
   <body onload="prettyPrint()">
     <div id="c0nt3nt">
       <div id="h34d3r">
+	<center>
 	<img src="/banner.png" alt="banner" />
+	</center>
       </div>
       <div id="m3nu">
-       <a href="/add"><img src="/new.png" alt="add a new entry" /></a>
-       <a href="/latest"><img src="/latest.png" alt="list recent entries" /></a>
+	<center>
+	<a href="/add"><img src="/new.png" alt="add a new entry" /></a>
+	<a href="/latest"><img src="/latest.png" alt="list recent entries" /></a>
+	</center>
       </div>
       <div id="p4g3">
 	<?php require_once('inc/dispatcher.php') ?>
       </div>
+      <br />
+      <center>
+        <img src="/fouteur.png" alt="f0ot3r" />
+        <br />
+        <a href="http://pastebin.buffout.org/view/170">p@st3 fr0m 3m@c5 !i!i!i!i!i!</a>
+      </center>
     </div>
   </body>
 </html>
