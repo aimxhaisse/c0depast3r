@@ -51,7 +51,7 @@ function	db_add_code($author, $code)
 
   $id = db_last_id();
 
-  irc_notice('pastebin.buffout.org -> c0de add3d [ http://pastebin.buffout.org/view/' . $id . ' ]');
+  irc_notice('pastebin.sbrk.org -> http://pastebin.sbrk.org/view/' . $id);
 
   return 'c0de add3d (<a href="/view/'.$id.'">#'.$id.'</a>)';
 }

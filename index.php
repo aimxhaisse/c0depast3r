@@ -22,7 +22,7 @@ db_install();
     <div id="c0nt3nt">
       <div id="h34d3r">
 	<center>
-	<a href="http://pastebin.buffout.org">
+	<a href="http://pastebin.sbrk.org">
 	<img src="/banner.png" alt="banner" />
         </a>
 	</center>
@@ -40,9 +40,9 @@ db_install();
       <center>
         <img src="/fouteur.png" alt="f0ot3r" />
         <br />
-        <a href="http://pastebin.buffout.org/view/170">p@st3 fr0m 3m@c5 !i!i!i!i!i!</a>
+        <a href="http://pastebin.sbrk.org/view/170">p@st3 fr0m 3m@c5 !i!i!i!i!i!</a>
         <br />
-        <a href="http://buffout.org/">p0w3r3d by buff0ut</a>
+        <a href="http://sbrk.org/">p0w3r3d by sbrk</a>
         <br />
         <img src="/fouteur.png" alt="f0ot3r" />
         <br />
