@@ -13,4 +13,4 @@ c0depast3r is just a tiny pastebin-like website to share chunks of code.
 
 ## Example
 
-A running example can be found at http://pastebin.sbrk.org/
+A running example can be found at http://code.sbrk.org/
