@@ -7,9 +7,8 @@ c0depast3r is just a tiny pastebin-like website to share chunks of code.
 
 ## Installation
 
-  - make sure php has the mode sqlite.
-  - clone the repository and copy its content to your web server.
-  - give permission to write on the data directory to the www user.
+   - docker pull aimxhaisse/c0depast3r
+   - docker run -d -e VHOST=code.sbrk.org aimxhaisse/c0depast3r
 
 ## Example
 
