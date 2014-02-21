@@ -1,7 +1,5 @@
 <?php
 
-error_reporting(E_ALL);
-
 // Some globals containers
 $global_db = array('handler' => false);
 
@@ -22,7 +20,7 @@ db_install();
     <div id="c0nt3nt">
       <div id="h34d3r">
 	<center>
-	<a href="http://code.sbrk.org">
+	<a href="http://<?php echo VHOST; ?>">
 	<img src="/banner.png" alt="banner" />
         </a>
 	</center>
@@ -39,8 +37,6 @@ db_install();
       <br />
       <center>
         <img src="/fouteur.png" alt="f0ot3r" />
-        <br />
-        <a href="http://code.sbrk.org/view/1">p@st3 fr0m 3m@c5 !i!i!i!i!i!</a>
         <br />
         <a href="http://sbrk.org/">p0w3r3d by sbrk</a>
         <br />

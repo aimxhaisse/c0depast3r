@@ -47,8 +47,6 @@ function	db_add_code($author, $code)
 
   $id = db_last_id();
 
-  irc_notice(sprintf("http://code.sbrk.org/%d added by %s", $id, $author));
-
   return 'c0de add3d (<a href="/view/'.$id.'">#'.$id.'</a>)';
 }
 
